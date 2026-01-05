@@ -57,8 +57,11 @@ const Nav = () => {
             </li>
 
           <li>
-                  <button className="bons"
-        onClick={() =>document.getElementById("contact")?.scrollIntoView({ behavior: "smooth",})}>Get in Touch</button>
+            <button className="bons" 
+        onClick={() => {
+          document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+          setShowMenu(false);
+        }}>Get in Touch</button>
           </li>
           </ul>
         </div>

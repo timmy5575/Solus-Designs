@@ -1,4 +1,4 @@
-.jo{ 
+.jo{ overlay: none;
   width: 100%;
   height: auto;
   max-width: 1200px; 
@@ -42,7 +42,7 @@
   background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
 }
 
-#card img{
+#cad img{
   position: relative;
   top: -50px;
   left: -50px;
@@ -52,7 +52,7 @@
 
 @media (max-width: 768px) {
 
-  #card img{
+  #cad img{
     display: none;
   }
 }
@@ -135,7 +135,7 @@
   color: rgb(255, 255, 255);
 }
 
-.racker:hover ~ #card .tle {
+.racker:hover ~ #cad .tle {
   opacity: 1;
 }
 
@@ -162,11 +162,11 @@
   cursor: pointer;
 }
 
-.racker:hover ~ #card #promp {
+.racker:hover ~ #cad #promp {
   opacity: 0;
 }
 
-.racker:hover ~ #card {
+.racker:hover ~ #cad {
   transition: 300ms;
   filter: brightness(1.1);
 }
@@ -187,7 +187,7 @@
     "tr-21 tr-22 tr-23 tr-24 tr-25";
 }
 
-#card::before {
+#cad::before {
   content: '';
   background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
   filter: blur(2rem);
@@ -229,31 +229,31 @@
 .tr-24 { --grid-area: 5 / 4; }
 .tr-25 { --grid-area: 5 / 5; }
 
-.tr-1:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(-10deg); }
-.tr-2:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(-5deg); }
-.tr-3:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(0deg); }
-.tr-4:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(5deg); }
-.tr-5:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(10deg); }
-.tr-6:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(-10deg); }
-.tr-7:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(-5deg); }
-.tr-8:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(0deg); }
-.tr-9:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(5deg); }
-.tr-10:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(10deg); }
-.tr-11:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(-10deg); }
-.tr-12:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(-5deg); }
-.tr-13:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(0deg); }
-.tr-14:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(5deg); }
-.tr-15:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(10deg); }
-.tr-16:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(-10deg); }
-.tr-17:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(-5deg); }
-.tr-18:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(0deg); }
-.tr-19:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(5deg); }
-.tr-20:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(10deg); }
-.tr-21:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(-10deg); }
-.tr-22:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(-5deg); }
-.tr-23:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(0deg); }
-.tr-24:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(5deg); }
-.tr-25:hover ~ #card { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(10deg); }
+.tr-1:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(-10deg); }
+.tr-2:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(-5deg); }
+.tr-3:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(0deg); }
+.tr-4:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(5deg); }
+.tr-5:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(20deg) rotateY(10deg); }
+.tr-6:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(-10deg); }
+.tr-7:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(-5deg); }
+.tr-8:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(0deg); }
+.tr-9:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(5deg); }
+.tr-10:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(10deg) rotateY(10deg); }
+.tr-11:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(-10deg); }
+.tr-12:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(-5deg); }
+.tr-13:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(0deg); }
+.tr-14:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(5deg); }
+.tr-15:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(10deg); }
+.tr-16:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(-10deg); }
+.tr-17:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(-5deg); }
+.tr-18:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(0deg); }
+.tr-19:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(5deg); }
+.tr-20:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-10deg) rotateY(10deg); }
+.tr-21:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(-10deg); }
+.tr-22:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(-5deg); }
+.tr-23:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(0deg); }
+.tr-24:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(5deg); }
+.tr-25:hover ~ #cad { transition: 125ms ease-in-out; transform: rotateX(-20deg) rotateY(10deg); }
 
 .noselect {
   -webkit-touch-callout: none;

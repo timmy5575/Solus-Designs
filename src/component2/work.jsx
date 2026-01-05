@@ -56,7 +56,7 @@ export default function Work() {
                         <div className="racker tr-23"></div>
                         <div className="racker tr-24"></div>
                         <div className="racker tr-25"></div>
-                        <div id="card">
+                        <div id="cad">
                           <img src={ui} alt=""  />
                         <p id="promp">UI/UX</p>
                           <div className="tle"> I design apps and websites with you in mind. <br />
@@ -96,7 +96,7 @@ export default function Work() {
                       <div className="racker tr-23"></div>
                       <div className="racker tr-24"></div>
                       <div className="racker tr-25"></div>
-                      <div id="card">
+                      <div id="cad">
                        <img src={gra} alt="" className='sv'/>
                       <p id="promp">Graphics Design</p>
                         <div className="tle">i create  eye-caching visuals
@@ -234,7 +234,7 @@ export default function Work() {
           <div className="racker tr-23"></div>
           <div className="racker tr-24"></div>
           <div className="racker tr-25"></div>
-          <div id="card">
+          <div id="cad">
              <img src={bt} alt=""  />
           <p id="promp">Brand Identity</p>
             <div className="tle">i help companies  develop their unique look and feel, 
