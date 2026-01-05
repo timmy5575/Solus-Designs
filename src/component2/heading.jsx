@@ -1,5 +1,5 @@
 import React from 'react'
-import "../component2/Heading2.css"
+import "../component2/heading2.css"
 
 const Heading = () => {
   return (
