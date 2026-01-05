@@ -1,0 +1,143 @@
+/* Responsive improvements for the .about block and its children */
+.about {
+  box-sizing: border-box;
+  color: #000;
+  background-color: #ffffff;
+  height: auto;
+  border-radius: 24px;
+  text-align: center;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: clamp(12px, 2.5vw, 32px);
+  margin-bottom: clamp(24px, 6vw, 64px);
+}
+
+.about p {
+  color: rgba(0, 0, 0, 0.86);
+  font-weight: 100;
+  width: min(90%, 900px);
+  text-align: center;
+  margin: 8px auto 0;
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.4;
+}
+
+.about h2 {
+  text-decoration: underline;
+  color: oklch(0.491 0.27 292.581);
+  font-size: clamp(32px, 8vw, 50px);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  margin: 12px 0;
+}
+
+/* layout container for cards / items inside about */
+.qua {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: clamp(12px, 2vw, 24px);
+  align-items: center;
+ 
+}
+
+/* prominent text / title */
+#qu {
+  text-decoration: none;
+  font-family: cursive;
+  color: oklch(0.491 0.27 292.581);
+  font-size: clamp(28px, 6vw, 50px);
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+/* detail element */
+#det {
+  text-decoration: underline;
+  font-size: clamp(18px, 4vw, 25px);
+  margin-top: -40px; /* kept for larger layouts where needed */
+  width: 100%;
+  max-width: 300px;
+  font-weight: 1000;
+  transition: margin 200ms ease;
+}
+
+/* Medium and smaller screens: stack content and remove negative offsets */
+@media (max-width: 992px) {
+  .about {
+    padding: clamp(12px, 4vw, 28px);
+    margin-bottom: clamp(20px, 6vw, 48px);
+  }
+
+  .qua {
+    gap: 18px;
+  }
+
+  #det {
+    margin-top: 0;
+    max-width: 420px;
+  }
+}
+
+/* Small phones: column layout, full widths */
+@media (max-width: 600px) {
+  .qua {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .about p {
+    width: 95%;
+    margin-top: 8px;
+  }
+
+  #qu {
+    font-size: clamp(20px, 8vw, 36px);
+    margin-bottom: 20px;
+  }
+
+  #det {
+    margin-top: -20px;
+    max-width: 95%;
+    font-size: clamp(16px, 4.5vw, 22px);
+  }
+}
+/* }
+.all{ 
+   
+    height: 250px;
+      width: 100%;
+  max-width: 1200px; 
+  margin: auto;    
+  padding: 0 20px;
+   margin-top: 50px;
+}
+
+.cards{ margin: auto;
+   display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 20px;
+
+
+}
+.cards div{ font-size: 1rem;
+  color: #bec4cf;
+  box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+  background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+  padding: 1.5rem;
+    width: 300.653px; height: 150px; border-radius: 20px; padding: 32px;
+    transition: 1s ease-in-out;
+    z-index: 1;
+     }
+     .cards div:hover{
+        transform: rotate(-10deg) scale(1.2);
+     }
+     
+.cards div p{color: white; font-weight:100; font-size: 16px; line-height: 24px; width: 300px;}
+    .cards div img{
+        border-radius: 30%;
+    } */

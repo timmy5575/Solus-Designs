@@ -1,0 +1,65 @@
+.link { 
+    display: flex;
+    padding: 20px;
+    text-align: start;
+    gap: 20px;
+    margin: auto;
+    width: 40%;
+    justify-content: space-between;
+    transition: 1s ease-in-out;
+}
+
+.mail {  
+    width: 60%;  
+    justify-content: space-between;
+    margin: auto; 
+    display: flex; 
+}
+
+.mail span {
+    color: rgb(200, 80, 192);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    transition: 0.8s ease-in-out;
+}
+
+img:hover {scale: 1.3;}
+
+ 
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .link {
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+    }
+     
+
+    .mail {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mail span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    img:hover {
+        scale: 1.1;
+    }
+
+    .mail span {
+        font-size: 16px;
+    }
+}

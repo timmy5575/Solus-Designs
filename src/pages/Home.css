@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ways {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 100%); */
+  background-color: white;
+  width: 100%;
+  max-width: 1200px;
+   margin: 0 auto;
+  padding: clamp(15px, 5vw, 30px);
+  border-radius: 20px;
+
+}
+
+
+.contact {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(15px, 5vw, 20px);
+  text-align: center;
+  margin-top: clamp(50px, 10vw, 100px);
+ 
+}
+
+.contact h1 {
+  color: white;
+  font-size: clamp(24px, 8vw, 48px);
+  margin: 0;
+}
+
+.contact h3 {
+  font-size: clamp(16px, 5vw, 20px);
+  color: white;
+  text-decoration: underline rgb(200, 80, 192);
+  margin: 15px 0;
+}
+
+.contact p {
+  margin: auto clamp(10px, 15vw, auto);
+  width: 90%;
+  max-width: 600px;
+  font-weight: 100;
+  font-size: clamp(16px, 4vw, 20px);
+  margin-bottom: 20px;
+
+}
+
+.testimo {
+  width: 90%;
+  max-width: 1200px;
+  margin: clamp(30px, 8vw, 50px) auto;
+  padding: 0 clamp(15px, 5vw, 20px);
+  text-align: center;
+}
+
+.testimo h2 {
+  margin-top: clamp(-20px, -2vw, -30px);
+   margin-bottom: clamp(20px, 2vw, 30px);
+  font-size: clamp(28px, 10vw, 50px);
+  color: white;
+}
+
+.testimo>p {
+  color: rgb(255, 255, 255);
+  text-decoration: underline rgb(200, 80, 192);
+  font-size: clamp(14px, 4vw, 16px);
+}
+
+.testimo > div:first-of-type {
+  margin-bottom: 20px;
+}
+
