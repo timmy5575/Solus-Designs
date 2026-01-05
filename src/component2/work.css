@@ -1,4 +1,5 @@
-.jo{ overlay: none;
+.jo{ position: relative;
+  z-index: 1;
   width: 100%;
   height: auto;
   max-width: 1200px; 
