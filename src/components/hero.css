@@ -93,15 +93,12 @@ a {
 }
 
 .two {
-  
   text-align: center;
  height: fit-content;
   padding: 70px 20px;
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto; 
-
-}
+  margin: 0 auto; }
 
 @media (max-width: 768px) {
   .two h1 {
