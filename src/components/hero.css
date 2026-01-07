@@ -98,7 +98,15 @@ a {
   padding: 70px 20px;
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto; 
+animation: sec 2s linear;
+}
+@keyframes sec {
+    from{opacity: 0; }
+    to{opacity: 1;}
+   
+}
+
 
 @media (max-width: 768px) {
   .two h1 {

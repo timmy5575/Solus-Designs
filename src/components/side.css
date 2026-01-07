@@ -8,9 +8,13 @@
   box-shadow: 0 2px 5px #0000001a;
   color: white;
   text-align: center;
-
+animation: sec 3s linear;
 }
-
+@keyframes sec {
+    from{opacity: 0; }
+    to{opacity: 1;}
+   
+}
 .card p {
    margin-top: 2px;
   font-size: 14px;

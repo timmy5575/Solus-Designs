@@ -13,7 +13,16 @@ height: 450px;
   margin: auto;
   margin-top: 50px;
   text-align: center;
+    animation:skill 5s linear ;  
+animation-timeline: view(); animation-range: entry 0% cover 70vh;
 }
+
+
+@keyframes skill {
+    from{opacity: 0; /*transform: translateY(100px);*/scale: 0.5;}
+    to{opacity: 1; /*transform:translateY(0px);*/ scale: 1;} 
+}
+
 .job h1{
   color: rgb(255, 255, 255);
   margin-bottom: 90px;
