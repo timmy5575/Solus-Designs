@@ -6,7 +6,6 @@ const Heading = () => {
    <>
    <div className='first'>
     <h1>PORTFOLIO</h1>
-    <h3>CV</h3>
    </div>
 
    <div className='res'>

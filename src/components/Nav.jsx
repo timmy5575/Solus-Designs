@@ -52,7 +52,7 @@ const Nav = () => {
 
             <li>
               <NavLink to="/projects" onClick={() => setShowMenu(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                Protfolio
+                Portfolio
               </NavLink>
             </li>
 

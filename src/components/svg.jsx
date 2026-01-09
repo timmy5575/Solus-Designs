@@ -46,26 +46,7 @@ const Svg = () => {
   </div>
  
 
-<div className='mail'>
-  <div style={{display :'flex'}}><img src={em} alt=""  /> <span>Therealfemi.oyewolegcfr@yahoo.com</span></div>
-  <div style={{display :'flex'}}><img src={phone} alt=""  /> <span>09064690659, 08084025402</span></div>
-        {/* <a
-      href="Therealfemi.oyewolegcfr@yahoo.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >  */}
-      
-    {/* </a> */}
-{/* 
-            <a
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-    >  */}
-      
-    {/* </a> */}
-</div>
-
+<div /> 
 </div>
 
 </>

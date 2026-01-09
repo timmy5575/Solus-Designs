@@ -75,7 +75,7 @@ const Footer = () => {
          
             <li>
               <NavLink to="/projects" onClick={() => setShowMenu(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                Protfolio
+                Portfolio
               </NavLink>
             </li>
         </ul>
@@ -90,7 +90,7 @@ const Footer = () => {
 
         <div className="footer-contact">
            <div className='fc'><img src={phone} alt="phone" /></div>
-          <span>09064690659, 08084025402</span>
+          <span>09064690659, 08084025502</span>
         </div>
 
         <p className="footer-text">Lagos / Nigeria</p>
