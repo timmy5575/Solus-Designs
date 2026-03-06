@@ -1,65 +1,65 @@
-.link { 
+.social-connect-container {
     display: flex;
-    padding: 20px;
-    text-align: start;
-    gap: 20px;
-    margin: auto;
-    width: 40%;
-    justify-content: space-between;
-    transition: 1s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
-.mail {  
-    width: 60%;  
-    justify-content: space-between;
-    margin: auto; 
-    display: flex; 
+.social-connect-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
 }
 
-.mail span {
-    color: rgb(200, 80, 192);
+.connect-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-md);
     text-decoration: none;
-    font-size: 20px;
-    margin: 10px;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.connect-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.connect-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    padding: 12px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.connect-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.connect-card:hover .connect-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.connect-label {
+    color: var(--text-main);
     font-weight: 500;
-}
-
-img {
-    width: 40px;
-    height: 40px;
-    transition: 0.8s ease-in-out;
-}
-
-img:hover {scale: 1.3;}
-
- 
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .link {
-        width: 80%;
-        flex-direction: row;
-        align-items: center;
-    }
-     
-
-    .mail {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mail span {
-        font-size: 18px;
-    }
+    font-size: 0.9rem;
 }
 
 @media (max-width: 480px) {
-    img:hover {
-        scale: 1.1;
-    }
-
-    .mail span {
-        font-size: 16px;
+    .social-connect-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

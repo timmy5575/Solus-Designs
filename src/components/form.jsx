@@ -39,25 +39,33 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
+    <div className="form-container glass-panel">
+      <form onSubmit={handleSubmit} className="contact-form">
+        <div className="input-group">
+          <input type="text" name="name" placeholder="Your Name" required className="form-input" />
+        </div>
 
-      <input type="email" name="email" placeholder="Your Email" required />
-      <ValidationError prefix="Email" field="email" errors={errors} />
+        <div className="input-group">
+          <input type="email" name="email" placeholder="Your Email" required className="form-input" />
+          <ValidationError prefix="Email" field="email" errors={errors} className="error-text" />
+        </div>
 
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <ValidationError prefix="Message" field="message" errors={errors} />
+        <div className="input-group">
+          <textarea name="message" placeholder="Your Message" required className="form-input form-textarea"></textarea>
+          <ValidationError prefix="Message" field="message" errors={errors} className="error-text" />
+        </div>
 
-      <button type="submit" disabled={status === "loading"}>
-        {status === "loading" ? "Sending..." : "Send Message"}
-      </button>
+        <button type="submit" disabled={status === "loading"} className="form-submit-btn">
+          {status === "loading" ? "Sending..." : "Send Message"}
+        </button>
 
-      {status === "success" && (
-        <p className="success">Message sent successfully.</p>
-      )}
-      {status === "error" && (
-        <p className="error">Something went wrong. Check errors above.</p>
-      )}
-    </form>
+        {status === "success" && (
+          <p className="success-message">Message sent successfully!</p>
+        )}
+        {status === "error" && (
+          <p className="error-message">Something went wrong. Please try again.</p>
+        )}
+      </form>
+    </div>
   );
 }

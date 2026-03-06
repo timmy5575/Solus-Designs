@@ -7,39 +7,34 @@ import Sev from "../components/sev.jsx"
 import ContactForm from "../components/form.jsx"
 import Svg from "../components/svg.jsx"
 import Testi from "../components/testi.jsx"
-import Test from '../components/test.jsx'
-import Footer from "../components/footer.jsx"
 import "./Home.css"
 
 const Home = () => {
   return (
-<>
+    <>
       <Hero />
       <Side />
-      <section  id="about"> <About /> </section>
-      <section  id="services"> <Sev /> </section>
+      <section id="about"> <About /> </section>
+      <section id="services"> <Sev /> </section>
       <Skill />
-      
-    <div className='contact'  id="contact">
-      <h1>Get In <span style={{color:'rgb(200, 80, 192)', fontFamily:'cursive'}}> Touch</span></h1>
-      <h3>Let's Work Together</h3>
-      <p>Have a project in mind? We'd love to hear about it and discuss how we can bring your vision to life</p>
-      
-      <div className='ways'>
 
-        <div className='fu'><ContactForm /></div>
-        <div className='su'><Svg /></div>
+      <div className='contact container section-padding' id="contact">
+        <div className="contact-header text-center">
+          <h2 className="section-title">Get In <span className="text-gradient">Touch</span></h2>
+          <p className="contact-subtitle">Let's Work Together</p>
+          <p className="contact-description">Have a project in mind? We'd love to hear about it and discuss how we can bring your vision to life.</p>
+        </div>
+
+        <div className='contact-content grid-2'>
+          <div className='contact-form-wrapper'><ContactForm /></div>
+          <div className='contact-social-wrapper'><Svg /></div>
+        </div>
       </div>
-    </div>
 
-    <div className='testimo'>
-          <p>↝Clients Testimonials</p>
-        <h2>The impact of <span style={{color:'rgb(200, 80, 192)', fontFamily:'cursive'}}> My Work </span></h2>
-<Testi />
-<Test />
-</div>
- <Footer />
-</>
+      <div className='testimo'>
+        <Testi />
+      </div>
+    </>
   );
 };
 

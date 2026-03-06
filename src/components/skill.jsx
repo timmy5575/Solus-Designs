@@ -1,55 +1,44 @@
 import React from 'react'
 import './skill.css'
+
 const Skill = () => {
+  const skills = [
+    { name: "Adobe Photoshop", percent: 70 },
+    { name: "Figma", percent: 80 },
+    { name: "Canva", percent: 90 },
+    { name: "Adobe Illustrator", percent: 73 }
+  ];
+
   return (
-   <>
-   <div className='main'>
-    <h2>My Favorite Tools</h2>
-    <h3> Exploring The Tools <span style={{color:'rgb(200, 80, 192)', fontFamily:'cursive'}}>Behind My Designs</span>
-    </h3>
-    <div className="bo">
-  <div className="skill-box">
-    <span className="tit">Adobe Photoshop </span>
+    <section className="skills-section container">
+      <div className="skills-header">
+        <h2 className="section-title">
+          My <span className="text-gradient">Favorite Tools</span>
+        </h2>
+        <p className="skills-subtitle">
+          Exploring the technology and software behind my creative process.
+        </p>
+      </div>
 
-    <div className="skill-bar">
-      <span className="skill-per html">
-        <span className="tooltip">70%</span>
-      </span>
-    </div>
-  </div>
-
-  <div className="skill-box">
-    <span className="tit">Figma</span>
-
-    <div className="skill-bar">
-      <span className="skill-per scss">
-        <span className="tooltip">80%</span>
-      </span>
-    </div>
-  </div>
-  <div className="skill-box">
-    <span className="tit">Canva</span>
-
-    <div className="skill-bar">
-      <span className="skill-per Canva">
-        <span className="tooltip">90%</span>
-      </span>
-    </div>
-  </div>
-
-  
-  <div className="skill-box">
-    <span className="tit">Adobe Illustrator</span>
-
-    <div className="skill-bar">
-      <span className="skill-per Illustrator">
-        <span className="tooltip">73%</span>
-      </span>
-    </div>
-  </div>
-</div>
-   </div>
-   </>
+      <div className="skills-container glass-panel">
+        <div className="skills-list">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill-item">
+              <div className="skill-info">
+                <span className="skill-name">{skill.name}</span>
+                <span className="skill-percent">{skill.percent}%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ '--target-width': `${skill.percent}%` }}
+                ></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 

@@ -6,50 +6,36 @@ import att from '../assets/attr.png'
 
 const Section = () => {
   return (
-    <>
-    <div className='about'>
-      <h2> About me</h2>
-      <p>I create brand identities, user interfaces,
-         and visual designs that help businesses stand out and connect with their audiences. 
-         Whether you need a complete brand overhaul, a digital product redesign,
-         or compelling graphics, I'm here to bring your vision to life. I'm currently taking on new projects and collaborations. Let's talk about your goals and how great design can help you achieve them.</p>
-         <div className='qua'>
-          <div>
-            <h2 id='qu'>200+</h2>
-          <p id='det'>Project Completed</p>
-          </div>
-          <div>
-            <h2 id='qu'>20+</h2>
-            <p id='det'>Brands Created</p>
-          </div>
-          <div>
-            <h2 id='qu'>6+</h2>
-            <p id='det'>Years of Experience</p>
-          </div>
-         </div>
-         
-    </div>
-    {/* <div className='all'>
-      <div className='cards'>
-        <div>
-        <img src={cre} alt="" />
-        <h5>Creative Design</h5>
-        <p>Unique and memorable designs that capture your brand's essence</p>
+    <div className="about-section container">
+      <div className="about-content glass-panel">
+        <div className="about-header">
+          <h2 className="section-title">
+            About <span className="text-gradient">Me</span>
+          </h2>
+          <p className="about-description">
+            I create brand identities, user interfaces, and visual designs that help businesses stand out and connect with their audiences.
+            Whether you need a complete brand overhaul, a digital product redesign,
+            or compelling graphics, I'm here to bring your vision to life. I'm currently taking on new projects and collaborations.
+            Let's talk about your goals and how great design can help you achieve them.
+          </p>
         </div>
 
-        <div>
-        <img src={idea} alt="" />
-        <h5>Innovative Solutions</h5>
-        <p>Forward-thinking approaches to solve complex design challenges</p></div>
-
-        <div>
-          <img src={att} alt="" />
-          <h5>Attention to Detail</h5>
-          <p>Meticulous craftsmanship in every pixel and interaction</p>
+        <div className="stats-grid">
+          <div className="stat-card">
+            <h3 className="stat-number text-gradient">200+</h3>
+            <p className="stat-label">Projects Completed</p>
           </div>
+          <div className="stat-card">
+            <h3 className="stat-number text-gradient">20+</h3>
+            <p className="stat-label">Brands Created</p>
+          </div>
+          <div className="stat-card">
+            <h3 className="stat-number text-gradient">6+</h3>
+            <p className="stat-label">Years of Experience</p>
+          </div>
+        </div>
       </div>
-    </div> */}
-    </>
+    </div>
   )
 }
 

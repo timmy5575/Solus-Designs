@@ -6,131 +6,61 @@ import gra from '../assets/gra.svg'
 import bt from '../assets/bt.svg'
 
 const Project = () => {
+  const services = [
+    {
+      id: 1,
+      title: "UI/UX Design",
+      image: ui,
+      description: "I design intuitive apps and websites that are simple, engaging, and easy to navigate for users.",
+    },
+    {
+      id: 2,
+      title: "Graphics Design",
+      image: gra,
+      description: "I create eye-catching visuals like logos and flyers that communicate your message clearly.",
+    },
+    {
+      id: 3,
+      title: "Brand Identity",
+      image: bt,
+      description: "I help companies develop a unique look and feel, choosing colors and styles that make them instantly recognizable.",
+    }
+  ];
+
   return (
-    <>
-    <div className='job'>
-    <h1> <span style={{color:'rgb(200, 80, 192)'}}>|Services </span> I Provide</h1>
-    <div className='al'>
+    <section className="services-section container" id="services">
+      <div className="services-header">
+        <h2 className="section-title">
+          <span className="text-gradient">Services</span> I Provide
+        </h2>
+        <p className="services-subtitle">
+          Comprehensive design solutions tailored to elevate your brand and engage your audience.
+        </p>
+      </div>
 
-                    <div className="container noselect">
-                      <div className="canvas">
-                        <div className="tracker tr-1"></div>
-                        <div className="tracker tr-2"></div>
-                        <div className="tracker tr-3"></div>
-                        <div className="tracker tr-4"></div>
-                        <div className="tracker tr-5"></div>
-                        <div className="tracker tr-6"></div>
-                        <div className="tracker tr-7"></div>
-                        <div className="tracker tr-8"></div>
-                        <div className="tracker tr-9"></div>
-                        <div className="tracker tr-10"></div>
-                        <div className="tracker tr-11"></div>
-                        <div className="tracker tr-12"></div>
-                        <div className="tracker tr-13"></div>
-                        <div className="tracker tr-14"></div>
-                        <div className="tracker tr-15"></div>
-                        <div className="tracker tr-16"></div>
-                        <div className="tracker tr-17"></div>
-                        <div className="tracker tr-18"></div>
-                        <div className="tracker tr-19"></div>
-                        <div className="tracker tr-20"></div>
-                        <div className="tracker tr-21"></div>
-                        <div className="tracker tr-22"></div>
-                        <div className="tracker tr-23"></div>
-                        <div className="tracker tr-24"></div>
-                        <div className="tracker tr-25"></div>
-                        <div id="card">
-                          <img src={ui} alt="" />
-                        <p id="prompt">UI/UX</p>
-                          <div className="title">i design app <br/>and website that<br/>are simple
-                          <br/>intuitive and <br/>easy to navigate </div>
-                          <div className="subtitle">
-                            <button>learn more →</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  <div className="container noselect">
-                    <div className="canvas">
-                      <div className="tracker tr-1"></div>
-                      <div className="tracker tr-2"></div>
-                      <div className="tracker tr-3"></div>
-                      <div className="tracker tr-4"></div>
-                      <div className="tracker tr-5"></div>
-                      <div className="tracker tr-6"></div>
-                      <div className="tracker tr-7"></div>
-                      <div className="tracker tr-8"></div>
-                      <div className="tracker tr-9"></div>
-                      <div className="tracker tr-10"></div>
-                      <div className="tracker tr-11"></div>
-                      <div className="tracker tr-12"></div>
-                      <div className="tracker tr-13"></div>
-                      <div className="tracker tr-14"></div>
-                      <div className="tracker tr-15"></div>
-                      <div className="tracker tr-16"></div>
-                      <div className="tracker tr-17"></div>
-                      <div className="tracker tr-18"></div>
-                      <div className="tracker tr-19"></div>
-                      <div className="tracker tr-20"></div>
-                      <div className="tracker tr-21"></div>
-                      <div className="tracker tr-22"></div>
-                      <div className="tracker tr-23"></div>
-                      <div className="tracker tr-24"></div>
-                      <div className="tracker tr-25"></div>
-                      <div id="card">
-                        <img src={gra} alt="" />
-                      <p id="prompt">Graphics Design</p>
-                        <div className="title">i create <br /> eye-caching visuals
-                        <br /> like logos, flyers,<br/>  business card<br/> that communicate <br/> 
-                        messages clearly <br/> and grab your <br/> attention</div>
-                        <div className="subtitle"><button>learn more →</button> </div>
-                       </div>
-                    </div>
-                  </div>
-
-      <div className="container noselect">
-        <div className="canvas">
-          <div className="tracker tr-1"></div>
-          <div className="tracker tr-2"></div>
-          <div className="tracker tr-3"></div>
-          <div className="tracker tr-4"></div>
-          <div className="tracker tr-5"></div>
-          <div className="tracker tr-6"></div>
-          <div className="tracker tr-7"></div>
-          <div className="tracker tr-8"></div>
-          <div className="tracker tr-9"></div>
-          <div className="tracker tr-10"></div>
-          <div className="tracker tr-11"></div>
-          <div className="tracker tr-12"></div>
-          <div className="tracker tr-13"></div>
-          <div className="tracker tr-14"></div>
-          <div className="tracker tr-15"></div>
-          <div className="tracker tr-16"></div>
-          <div className="tracker tr-17"></div>
-          <div className="tracker tr-18"></div>
-          <div className="tracker tr-19"></div>
-          <div className="tracker tr-20"></div>
-          <div className="tracker tr-21"></div>
-          <div className="tracker tr-22"></div>
-          <div className="tracker tr-23"></div>
-          <div className="tracker tr-24"></div>
-          <div className="tracker tr-25"></div>
-          <div id="card">
-            <img src={bt} alt="" />
-          <p id="prompt">Brand Identity</p>
-            <div className="title">i help companies <br/> develop their unique<br /> look and feel, 
-            <br/> choosing colors, <br/> fonts and styles <br/> that make them <br/>instantly recognizable <br/> and memorable  </div>
-            <div className="subtitle"><button>learn more →</button></div>
+      <div className="services-grid">
+        {services.map((service) => (
+          <div key={service.id} className="service-card glass-panel">
+            <div className="service-image-wrapper">
+              <img src={service.image} alt={service.title} className="service-icon" />
+            </div>
+            <h3 className="service-title">{service.title}</h3>
+            <p className="service-description">{service.description}</p>
+            {/* <button className="service-btn">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </button> */}
           </div>
-        </div>
-  </div>
-</div>
-       <Link to="/projects">
-        <button className="port" >learn more →</button>
-      </Link>
-</div>
-    </>
+        ))}
+      </div>
+
+      <div className="services-footer">
+        <Link to="/projects" className="btn-secondary">
+          View My Portfolio
+        </Link>
+      </div>
+    </section>
   )
 }
+
 export default Project
